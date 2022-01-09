@@ -9,7 +9,7 @@ count_by = int(input("What should I count by? "))
 print()
 
 if count_by < 0:
-    print("We must count by a positive number!", file=stderr)
+    print("We must count by a positive number!")
 # Ask the user for the start and end numbers
 
 start = int(input("What number should I start on? "))
