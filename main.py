@@ -21,12 +21,11 @@ print()
 
 if end < start:
     print("The ending number can't be before the starting number!")
-answer = start + count_by 
+answer = start 
 
-print(start)
 
 # While loop
-while (answer < end): 
+while (answer <= end): 
   print(answer) 
   answer= answer + count_by
 
