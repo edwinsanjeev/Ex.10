@@ -9,7 +9,8 @@ count_by = int(input("What should I count by? "))
 print()
 
 if count_by < 0:
-    print("We must count by a positive number!")
+    print("We must count by a positive number!", file=stderr)
+    exit()
 # Ask the user for the start and end numbers
 
 start = int(input("What number should I start on? "))
@@ -20,8 +21,13 @@ print()
 
 
 if end < start:
-    print("The ending number can't be before the starting number!")
+    print("The ending number can't be before the starting number!", file=stderr)
+    exit()
 answer = start 
+
+if end == start:
+    print("The ending number can't be before the starting number!", file=stderr)
+    exit()
 
 
 # While loop
